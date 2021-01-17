@@ -1,5 +1,5 @@
 import numpy as np
-
+# TODO make it work if m and n is not equal
 def nr_smaller_m1_bigger_m2(A,m1,m2):
   """We take in matrix A and array m1 and m2 where m1 and m2 represent 
   a place in Array A. 
@@ -84,16 +84,13 @@ def nr_smaller_m1_bigger_m2(A,m1,m2):
         break
   return tot
 
-
 A = np.array([[1, 3, 7, 10, 15, 20],
     [2, 6, 9, 14, 22, 25],
     [3, 8, 10, 15, 25, 30],
     [10, 11, 12, 23, 30, 35],
     [20, 25, 30, 35, 40, 45]])
 
-
-m1 = np.array([1, 1])
-m2 = np.array([3, 3])
-print(A[1][2])
+m1 = np.array([1, 2])
+m2 = np.array([2, 3])
 
 print(nr_smaller_m1_bigger_m2(A, m1, m2))
